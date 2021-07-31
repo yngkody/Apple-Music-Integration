@@ -12,8 +12,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //// Usage ////
+        
+        AppleMusicManager.shared.find(songTitle: "Demons Yng Kody", developerToken: "developer_token"){
+
+            AppleMusicManager.shared.play(song: [AppleMusicManager.shared.identifier])
+            
+        }
+        
     }
 
 
 }
+
+
 
